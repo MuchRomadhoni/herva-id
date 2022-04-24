@@ -414,6 +414,12 @@ section {
   color: #012970;
   margin-top: 40px;
 }
+.hero span {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2ec49c;
+}
 .hero h2 {
   color: #444444;
   margin: 25px 0 0 0;
@@ -497,19 +503,29 @@ section {
   padding: 40px;
 }
 .about h3 {
-  font-size: 14px;
+  font-size: 40px;
   font-weight: 700;
   color: #4154f1;
   text-transform: uppercase;
 }
 .about h2 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
   color: #012970;
 }
+
+.about li {
+  font-size: 22px;
+  font-weight: 500;
+  color: #012970;
+  margin: 10px 0 0 0;
+  line-height: 24px;
+}
+
 .about p {
   margin: 15px 0 30px 0;
   line-height: 24px;
+  font-size: 22px;
 }
 .about .btn-read-more {
   line-height: 0;
