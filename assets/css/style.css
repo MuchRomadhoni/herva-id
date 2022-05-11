@@ -401,9 +401,9 @@ section {
 /* youtube */
 .youtube {
   width: 100%;
-  background-color: #ccf3ee;
+  background: url(../img/3.jpg) top center no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 }
 
 .youtube span {
@@ -419,11 +419,6 @@ section {
   height: 100vh;
   background: url(../img/hero-bg.png) top center no-repeat;
   background-size: cover;
-}
-
-.cover .coba {
-  width: 100%;
-  height: 100vh;
 }
 
 .cover h1 {
@@ -477,7 +472,7 @@ section {
 @media (max-width: 991px) {
   .cover {
     height: auto;
-    padding: 60px 0 60px 0;
+    padding: 60px 0 0 0;
   }
   .cover .cover-img {
     text-align: center;
@@ -510,33 +505,127 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# gabungSection
 --------------------------------------------------------------*/
-.hero {
+.gabung {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  background: url(../img/call-to-action-bg.jpg) top center no-repeat;
   background-size: cover;
 }
-.hero h1 {
+
+.gabung h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+.gabung span {
+  margin: 0;
+  font-weight: 700;
+  color: #4154f1;
+}
+.gabung h2 {
+  color: #fff;
+  margin: 25px 0 0 0;
+  font-size: 26px;
+}
+.gabung .btn-get-started {
+  margin-top: 30px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #fff;
+  box-shadow: 0px 5px 30px rgba(255, 255, 255, 0.4);
+}
+.gabung .btn-get-started span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.gabung .btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.gabung .btn-get-started:hover i {
+  transform: translateX(5px);
+}
+.gabung .cover-img {
+  text-align: right;
+}
+
+.gabung i {
+  color: #4154f1;
+}
+@media (min-width: 1024px) {
+  .gabung {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 991px) {
+  .gabung {
+    height: auto;
+    padding: 60px 0 0 0;
+  }
+  .gabung .cover-img {
+    text-align: center;
+    margin-top: 80px;
+  }
+  .gabung .cover-img img {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .gabung {
+    text-align: center;
+  }
+  .gabung h1 {
+    font-size: 28px;
+  }
+  .gabung h2 {
+    font-size: 18px;
+  }
+  .gabung .cover-img img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gabung label {
+    text-align: left;
+    margin-left: 15px;
+  }
+}
+
+/*--------------------------------------------------------------
+# terobosan Section
+--------------------------------------------------------------*/
+.terobosan {
+  width: 100%;
+  height: 100vh;
+  background-color: #f2f5fc;
+  background-size: cover;
+}
+.terobosan h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
   color: #012970;
   margin-top: 40px;
 }
-.hero span {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 700;
+.terobosan span {
   color: #2ec49c;
 }
-.hero h2 {
+.terobosan h2 {
   color: #444444;
   margin: 25px 0 0 0;
   font-size: 20px;
 }
-.hero .btn-get-started {
+.terobosan .btn-get-started {
   margin-top: 30px;
   line-height: 0;
   padding: 15px 40px;
@@ -546,58 +635,58 @@ section {
   background: #4154f1;
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
-.hero .btn-get-started span {
+.terobosan .btn-get-started span {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
 }
-.hero .btn-get-started i {
+.terobosan .btn-get-started i {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
 }
-.hero .btn-get-started:hover i {
+.terobosan .btn-get-started:hover i {
   transform: translateX(5px);
 }
-.hero .hero-img {
+.terobosan .terobosan-img {
   text-align: right;
 }
 @media (min-width: 1024px) {
-  .hero {
+  .terobosan {
     background-attachment: fixed;
   }
 }
 @media (max-width: 991px) {
-  .hero {
+  .terobosan {
     height: auto;
-    padding: 120px 0 60px 0;
+    padding: 60px 0 60px 0;
   }
-  .hero .hero-img {
+  .terobosan .terobosan-img {
     text-align: center;
     margin-top: 80px;
   }
-  .hero .hero-img img {
+  .terobosan .terobosan-img img {
     width: 80%;
   }
 }
 @media (max-width: 768px) {
-  .hero {
+  .terobosan {
     text-align: center;
   }
-  .hero h1 {
+  .terobosan h1 {
     font-size: 32px;
   }
-  .hero h2 {
+  .terobosan h2 {
     font-size: 24px;
   }
-  .hero .hero-img img {
+  .terobosan .terobosan-img img {
     width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  .hero label {
+  .terobosan label {
     text-align: left;
     margin-left: 15px;
   }
@@ -609,8 +698,12 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  background-color: #006e7f;
+}
+
 .about .content {
-  background-color: #f6f9ff;
+  background-color: #fcffe7;
   padding: 40px;
 }
 .about h3 {
@@ -874,6 +967,48 @@ section {
 .features .feature-icons .content .icon-box p {
   font-size: 15px;
   color: #848484;
+}
+
+/*--------------------------------------------------------------
+# keuntungan
+--------------------------------------------------------------*/
+.keuntungan .feature-icons {
+  margin-top: 60px;
+}
+.keuntungan .feature-icons h3 {
+  color: #012970;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.keuntungan .feature-icons span {
+  color: #2ec49c;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .keuntungan .feature-icons h3 {
+    font-size: 28px;
+  }
+}
+.keuntungan .feature-icons .content .icon-box {
+  display: flex;
+}
+.keuntungan .feature-icons .content .icon-box h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: #012970;
+}
+.keuntungan .feature-icons .content .icon-box i {
+  font-size: 44px;
+  line-height: 44px;
+  color: #0245bc;
+  margin-right: 15px;
+}
+.keuntungan .feature-icons .content .icon-box p {
+  font-size: 18px;
+  color: #000;
 }
 
 /*--------------------------------------------------------------
