@@ -411,6 +411,16 @@ section {
   color: #e8e8bb;
 }
 
+.youtube iframe {
+  padding: 50px;
+}
+
+@media (max-width: 768px) {
+  .youtube iframe {
+    padding: 10px;
+  }
+}
+
 /*--------------------------------------------------------------
 # cover Section
 --------------------------------------------------------------*/
@@ -419,6 +429,11 @@ section {
   height: 100vh;
   background: url(../img/hero-bg.png) top center no-repeat;
   background-size: cover;
+}
+
+.coba {
+  width: 100%;
+  height: 100vh;
 }
 
 .cover h1 {
