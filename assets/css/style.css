@@ -415,7 +415,31 @@ section {
   padding: 50px;
 }
 
+.section-youtube {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.section-youtube h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #4154f1;
+  text-transform: uppercase;
+}
+.section-youtube p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+}
 @media (max-width: 768px) {
+  .section-youtube p {
+    font-size: 16px;
+    line-height: 24px;
+  }
   .youtube iframe {
     padding: 10px;
   }
@@ -521,9 +545,14 @@ section {
 .cover {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  background: url(../img/bg2.jpg) top center no-repeat;
   background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 }
+
+/* .cover .blur {
+  background-color: rgba(0, 0, 0, 0.6);
+} */
 
 .coba {
   width: 100%;
@@ -599,7 +628,8 @@ section {
     font-size: 28px;
   }
   .cover h2 {
-    font-size: 18px;
+    font-size: 14px;
+    margin-top: 0;
   }
   .cover .cover-img img {
     width: 100%;
@@ -619,7 +649,7 @@ section {
 .gabung {
   width: 100%;
   height: 100vh;
-  background: url(../img/call-to-action-bg.jpg) top center no-repeat;
+  background: url(../img/bg2.jpg) top center no-repeat;
   background-size: cover;
 }
 
@@ -726,6 +756,13 @@ section {
   color: #012970;
   margin-top: 40px;
 }
+.terobosan h3 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  color: #012970;
+  margin-top: 40px;
+}
 .terobosan span {
   color: #2ec49c;
 }
@@ -769,7 +806,7 @@ section {
 @media (max-width: 991px) {
   .terobosan {
     height: auto;
-    padding: 60px 0 60px 0;
+    padding: 40px 20px 50px 20px;
   }
   .terobosan .terobosan-img {
     text-align: center;
@@ -780,14 +817,21 @@ section {
   }
 }
 @media (max-width: 768px) {
-  .terobosan {
+  /* .terobosan {
     text-align: center;
-  }
+  } */
   .terobosan h1 {
-    font-size: 32px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
   }
   .terobosan h2 {
-    font-size: 24px;
+    font-size: 15px;
+  }
+  .terobosan h3 {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
   }
   .terobosan .terobosan-img img {
     width: 100%;
@@ -808,37 +852,49 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background-color: #006e7f;
+  background: url(../img/bg3.jpg) top center no-repeat;
+  background-size: cover;
 }
 
 .about .content {
-  background-color: #fcffe7;
+  background: rgba(84, 80, 80, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(218, 218, 224, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 40px;
 }
 .about h3 {
   font-size: 40px;
-  font-weight: 700;
-  color: #4154f1;
+  font-weight: 400;
+  color: #fff;
   text-transform: uppercase;
 }
 .about h2 {
   font-size: 28px;
-  font-weight: 700;
-  color: #012970;
+  font-weight: 400;
+  color: #fff;
 }
 
 .about li {
   font-size: 22px;
-  font-weight: 500;
-  color: #012970;
+  font-weight: 200;
+  color: #fff;
   margin: 10px 0 0 0;
   line-height: 24px;
+}
+
+.about span {
+  color: #e8e8bb;
+  font-weight: 600;
 }
 
 .about p {
   margin: 15px 0 30px 0;
   line-height: 24px;
   font-size: 22px;
+  color: #fff;
 }
 .about .btn-read-more {
   line-height: 0;
@@ -869,11 +925,11 @@ section {
     font-size: 28px;
   }
   .about h2 {
-    font-size: 22px;
+    font-size: 15px;
   }
 
   .about li {
-    font-size: 16px;
+    font-size: 14px;
     margin: 5px 0 0 0;
   }
 
@@ -1081,25 +1137,27 @@ section {
 /*--------------------------------------------------------------
 # keuntungan
 --------------------------------------------------------------*/
+.keuntungan {
+  background: url(../img/call-to-action-bg.jpg) top center no-repeat;
+  background-size: cover;
+}
+
 .keuntungan .feature-icons {
   margin-top: 60px;
+  margin-bottom: 50px;
 }
 .keuntungan .feature-icons h3 {
-  color: #012970;
+  color: #ffce54;
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 20px;
   text-align: center;
 }
 .keuntungan .feature-icons span {
-  color: #2ec49c;
+  color: #fff;
   font-weight: bold;
 }
-@media (max-width: 768px) {
-  .keuntungan .feature-icons h3 {
-    font-size: 28px;
-  }
-}
+
 .keuntungan .feature-icons .content .icon-box {
   display: flex;
 }
@@ -1107,17 +1165,29 @@ section {
   font-size: 24px;
   font-weight: 700;
   margin: 0 0 10px 0;
-  color: #012970;
+  color: #ffce54;
 }
 .keuntungan .feature-icons .content .icon-box i {
   font-size: 44px;
   line-height: 44px;
-  color: #0245bc;
+  color: #fff;
   margin-right: 15px;
 }
 .keuntungan .feature-icons .content .icon-box p {
-  font-size: 18px;
-  color: #000;
+  font-size: 14px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .keuntungan .feature-icons h3 {
+    font-size: 26px;
+  }
+  .keuntungan .feature-icons .content .icon-box h4 {
+    font-size: 22px;
+  }
+  .keuntungan .feature-icons .content .icon-box p {
+    font-size: 12px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1362,6 +1432,10 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio {
+  background: #f9fbff;
+}
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;
@@ -1601,6 +1675,14 @@ section {
   border: 4px solid #fff;
   margin: 0 auto;
 }
+
+.testimonial-wa {
+  width: 100%;
+  height: 100%;
+  border: 4px solid #fff;
+  margin: 0 auto;
+}
+
 .testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
