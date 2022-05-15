@@ -446,18 +446,18 @@ section {
 }
 
 /*--------------------------------------------------------------
-# keuntungan supp Section
+# fasilitas supp Section
 --------------------------------------------------------------*/
-.keuntungan-supp {
+.fasilitas-supp {
   background: url(../img/bg-cover.jpg) top center no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
 }
 
-.keuntungan-header {
+.fasilitas-header {
   text-align: center;
 }
-.keuntungan-header h2 {
+.fasilitas-header h2 {
   font-size: 13px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -465,7 +465,7 @@ section {
   color: #ffce54;
   text-transform: uppercase;
 }
-.keuntungan-header p {
+.fasilitas-header p {
   margin: 10px 0 0 0;
   padding: 0;
   font-size: 38px;
@@ -474,7 +474,7 @@ section {
   color: #fff;
 }
 @media (max-width: 768px) {
-  .keuntungan-header p {
+  .fasilitas-header p {
     font-size: 28px;
     line-height: 32px;
   }
@@ -592,9 +592,9 @@ section {
 .cover {
   width: 100%;
   height: 100vh;
-  background: url(../img/bg-cover.jpg) top center no-repeat;
+  background: url(../img/bg-cover/11.png) top center no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3); */
 }
 
 /* .cover .blur {
@@ -610,7 +610,7 @@ section {
   margin: 0;
   font-size: 42px;
   font-weight: 700;
-  color: #fff;
+  color: #012970;
 }
 .cover span {
   margin: 0;
@@ -618,7 +618,7 @@ section {
   color: #ffce54;
 }
 .cover h2 {
-  color: #fff;
+  color: #012970;
   margin: 25px 0 0 0;
   font-size: 26px;
 }
@@ -675,7 +675,7 @@ section {
     font-size: 28px;
   }
   .cover h2 {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 0;
   }
   .cover .cover-img img {
@@ -1233,6 +1233,63 @@ section {
     font-size: 22px;
   }
   .keuntungan .feature-icons .content .icon-box p {
+    font-size: 12px;
+  }
+}
+
+/*--------------------------------------------------------------
+# fasilitas
+--------------------------------------------------------------*/
+.fasilitas {
+  background: url(../img/bg-cover.jpg) top center no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.fasilitas .feature-icons {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.fasilitas .feature-icons h3 {
+  color: #ffce54;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.fasilitas .feature-icons span {
+  color: #fff;
+  font-weight: bold;
+}
+
+.fasilitas .feature-icons .content .icon-box {
+  display: flex;
+}
+.fasilitas .feature-icons .content .icon-box h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: #ffce54;
+}
+.fasilitas .feature-icons .content .icon-box i {
+  font-size: 44px;
+  line-height: 44px;
+  color: #fff;
+  margin-right: 15px;
+}
+.fasilitas .feature-icons .content .icon-box p {
+  font-size: 14px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .fasilitas .feature-icons h3 {
+    font-size: 26px;
+  }
+  .fasilitas .feature-icons .content .icon-box h4 {
+    font-size: 22px;
+  }
+  .fasilitas .feature-icons .content .icon-box p {
     font-size: 12px;
   }
 }
