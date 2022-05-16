@@ -592,18 +592,39 @@ section {
 .cover {
   width: 100%;
   height: 100vh;
-  background: url(../img/bg-cover/11.png) top center no-repeat;
+  background: url(../img/bg-cover/1\ -\ Copy.png) top center no-repeat;
   background-size: cover;
   /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3); */
+}
+
+.cover .coba {
+  width: 100%;
+  height: 100vh;
 }
 
 /* .cover .blur {
   background-color: rgba(0, 0, 0, 0.6);
 } */
 
-.coba {
+.container {
+  position: relative;
+}
+
+.container img {
   width: 100%;
-  height: 100vh;
+  height: auto;
+}
+
+.container .abs {
+  position: absolute;
+  top: 5px;
+  align-self: center;
+}
+
+.container .haha {
+  position: absolute;
+  bottom: 20%;
+  align-self: center;
 }
 
 .cover h1 {
@@ -621,6 +642,7 @@ section {
   color: #012970;
   margin: 25px 0 0 0;
   font-size: 26px;
+  bottom: 20px;
 }
 .cover .btn-get-started {
   margin-top: 30px;
@@ -685,8 +707,13 @@ section {
 
 @media (max-width: 768px) {
   .cover label {
-    text-align: left;
+    /* text-align: left; */
     margin-left: 15px;
+  }
+
+  .cover {
+    background: url(/herva-id/assets/img/bg-cover/m-1.jpg) top center no-repeat;
+    background-size: cover;
   }
 }
 
