@@ -932,6 +932,16 @@ section {
   background-size: cover;
 }
 
+.glassmorphism {
+  background: rgba(84, 80, 80, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(218, 218, 224, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 20px;
+}
+
 .about .content {
   background: rgba(84, 80, 80, 0.25);
   box-shadow: 0 8px 32px 0 rgba(218, 218, 224, 0.37);
@@ -1324,9 +1334,193 @@ section {
 }
 
 /*--------------------------------------------------------------
+# mk
+--------------------------------------------------------------*/
+.mk .mk-box {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  height: 100%;
+  padding: 60px 15px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.mk .mk-box p {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+
+.mk .mk-box {
+  color: #fff;
+}
+
+.mk .mk-box span {
+  color: #012970;
+}
+
+.mk .mk-box .icon {
+  font-size: 46px;
+  padding: 15px 10px;
+  border-radius: 4px;
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  transition: 0.3s;
+  text-align: end;
+}
+.mk .mk-box h3 {
+  color: #fff;
+  font-weight: 700;
+}
+
+.mk .mk-box sup {
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .mk .mk-box h3 {
+    font-size: 18px;
+  }
+
+  .mk .mk-box p {
+    font-size: 15px;
+  }
+}
+
+.mk .mk-box .read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 20px;
+  color: #fff;
+}
+.mk .mk-box .read-more i {
+  line-height: 0;
+  margin-left: 5px;
+  font-size: 18px;
+}
+.mk .mk-box.green {
+  border-bottom: 3px solid #2ec49c;
+  background: #2ec49c;
+}
+.mk .mk-box.green .icon {
+  color: #fff;
+  /* background: #fff; */
+}
+.mk .mk-box.green .read-more {
+  color: #fff;
+}
+/* .services .service-box.blue:hover {
+  background: #2db6fa;
+} */
+/* .services .service-box:hover h3,
+.services .service-box:hover p,
+.services .service-box:hover .read-more {
+  color: #fff;
+} */
+/* .services .service-box:hover .icon {
+  background: #fff;
+} */
+
+/*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .service-box {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  height: 100%;
+  padding: 60px 15px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.services .service-box p {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+
+.services .service-box {
+  color: #fff;
+}
+
+.services .service-box span {
+  color: #012970;
+}
+
+.services .service-box .icon {
+  font-size: 46px;
+  padding: 15px 10px;
+  border-radius: 4px;
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  transition: 0.3s;
+  text-align: end;
+}
+.services .service-box h3 {
+  color: #fff;
+  font-weight: 700;
+}
+
+.services .service-box sup {
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .services .service-box h3 {
+    font-size: 18px;
+  }
+
+  .services .service-box p {
+    font-size: 15px;
+  }
+}
+
+.services .service-box .read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 20px;
+  color: #fff;
+}
+.services .service-box .read-more i {
+  line-height: 0;
+  margin-left: 5px;
+  font-size: 18px;
+}
+.services .service-box.blue {
+  border-bottom: 3px solid #2db6fa;
+  background: #2db6fa;
+}
+.services .service-box.blue .icon {
+  color: #fff;
+  /* background: #fff; */
+}
+.services .service-box.blue .read-more {
+  color: #fff;
+}
+/* .services .service-box.blue:hover {
+  background: #2db6fa;
+} */
+/* .services .service-box:hover h3,
+.services .service-box:hover p,
+.services .service-box:hover .read-more {
+  color: #fff;
+} */
+/* .services .service-box:hover .icon {
+  background: #fff;
+} */
+
+/*--------------------------------------------------------------
+# ringkasan
+--------------------------------------------------------------*/
+.ringkasan .ringkasan-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
   padding: 60px 30px;
@@ -1334,7 +1528,7 @@ section {
   transition: 0.3s;
   border-radius: 5px;
 }
-.services .service-box .icon {
+.ringkasan .ringkasan-box .icon {
   font-size: 36px;
   padding: 40px 20px;
   border-radius: 4px;
@@ -1344,11 +1538,17 @@ section {
   line-height: 0;
   transition: 0.3s;
 }
-.services .service-box h3 {
+.ringkasan .ringkasan-box h3 {
   color: #444444;
   font-weight: 700;
 }
-.services .service-box .read-more {
+
+.ringkasan .ringkasan-box span {
+  color: #012970;
+  font-weight: 700;
+}
+
+.ringkasan .ringkasan-box .read-more {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1356,95 +1556,95 @@ section {
   font-size: 16px;
   padding: 8px 20px;
 }
-.services .service-box .read-more i {
+.ringkasan .ringkasan-box .read-more i {
   line-height: 0;
   margin-left: 5px;
   font-size: 18px;
 }
-.services .service-box.blue {
+.ringkasan .ringkasan-box.blue {
   border-bottom: 3px solid #2db6fa;
 }
-.services .service-box.blue .icon {
+.ringkasan .ringkasan-box.blue .icon {
   color: #2db6fa;
   background: #dbf3fe;
 }
-.services .service-box.blue .read-more {
+.ringkasan .ringkasan-box.blue .read-more {
   color: #2db6fa;
 }
-.services .service-box.blue:hover {
+.ringkasan .ringkasan-box.blue:hover {
   background: #2db6fa;
 }
-.services .service-box.orange {
+.ringkasan .ringkasan-box.orange {
   border-bottom: 3px solid #f68c09;
 }
-.services .service-box.orange .icon {
+.ringkasan .ringkasan-box.orange .icon {
   color: #f68c09;
   background: #fde3c4;
 }
-.services .service-box.orange .read-more {
+.ringkasan .ringkasan-box.orange .read-more {
   color: #f68c09;
 }
-.services .service-box.orange:hover {
+.ringkasan .ringkasan-box.orange:hover {
   background: #f68c09;
 }
-.services .service-box.green {
+.ringkasan .ringkasan-box.green {
   border-bottom: 3px solid #08da4e;
 }
-.services .service-box.green .icon {
+.ringkasan .ringkasan-box.green .icon {
   color: #08da4e;
   background: #cffddf;
 }
-.services .service-box.green .read-more {
+.ringkasan .ringkasan-box.green .read-more {
   color: #08da4e;
 }
-.services .service-box.green:hover {
+.ringkasan .ringkasan-box.green:hover {
   background: #08da4e;
 }
-.services .service-box.red {
+.ringkasan .ringkasan-box.red {
   border-bottom: 3px solid #e9222c;
 }
-.services .service-box.red .icon {
+.ringkasan .ringkasan-box.red .icon {
   color: #e9222c;
   background: #fef7f8;
 }
-.services .service-box.red .read-more {
+.ringkasan .ringkasan-box.red .read-more {
   color: #e9222c;
 }
-.services .service-box.red:hover {
+.ringkasan .ringkasan-box.red:hover {
   background: #e9222c;
 }
-.services .service-box.purple {
+.ringkasan .ringkasan-box.purple {
   border-bottom: 3px solid #b50edf;
 }
-.services .service-box.purple .icon {
+.ringkasan .ringkasan-box.purple .icon {
   color: #b50edf;
   background: #f8e4fd;
 }
-.services .service-box.purple .read-more {
+.ringkasan .ringkasan-box.purple .read-more {
   color: #b50edf;
 }
-.services .service-box.purple:hover {
+.ringkasan .ringkasan-box.purple:hover {
   background: #b50edf;
 }
-.services .service-box.pink {
+.ringkasan .ringkasan-box.pink {
   border-bottom: 3px solid #f51f9c;
 }
-.services .service-box.pink .icon {
+.ringkasan .ringkasan-box.pink .icon {
   color: #f51f9c;
   background: #feecf7;
 }
-.services .service-box.pink .read-more {
+.ringkasan .ringkasan-box.pink .read-more {
   color: #f51f9c;
 }
-.services .service-box.pink:hover {
+.ringkasan .ringkasan-box.pink:hover {
   background: #f51f9c;
 }
-.services .service-box:hover h3,
-.services .service-box:hover p,
-.services .service-box:hover .read-more {
+.ringkasan .ringkasan-box:hover h3,
+.ringkasan .ringkasan-box:hover p,
+.ringkasan .ringkasan-box:hover .read-more {
   color: #fff;
 }
-.services .service-box:hover .icon {
+.ringkasan .ringkasan-box:hover .icon {
   background: #fff;
 }
 
