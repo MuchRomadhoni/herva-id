@@ -40,7 +40,6 @@ h6 {
 # Sections
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
   overflow: hidden;
 }
 
@@ -52,14 +51,14 @@ section {
 
 .section-header {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .section-header h2 {
   font-size: 13px;
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
-  color: #4154f1;
+  color: #2ec49c;
   text-transform: uppercase;
 }
 .section-header p {
@@ -68,7 +67,7 @@ section {
   font-size: 38px;
   line-height: 42px;
   font-weight: 700;
-  color: #012970;
+  color: #316451;
 }
 @media (max-width: 768px) {
   .section-header p {
@@ -216,7 +215,7 @@ section {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #013289;
+  color: #7ea499;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -230,11 +229,11 @@ section {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #4154f1;
+  color: #ffde92;
 }
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #4154f1;
+  background: #7ea499;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -243,7 +242,7 @@ section {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #5969f3;
+  background: #ffde92;
 }
 .navbar .dropdown ul {
   display: block;
@@ -401,14 +400,15 @@ section {
 /* youtube */
 .youtube {
   width: 100%;
-  background: url(../img/3.jpg) top center no-repeat;
+  background-color: #fff;
+  /* background: url(../img/3.jpg) top center no-repeat; */
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); */
 }
 
-.youtube span {
+.youtube h1 {
   margin: 0;
-  color: #e8e8bb;
+  color: #316451;
 }
 
 .youtube iframe {
@@ -433,7 +433,7 @@ section {
   font-size: 38px;
   line-height: 42px;
   font-weight: 700;
-  color: #012970;
+  color: #316451;
 }
 @media (max-width: 768px) {
   .section-youtube p {
@@ -497,25 +497,30 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  /* background: url(../img/hero-bg.png) top center no-repeat; */
   background-size: cover;
   padding: 60px 0 0px 0;
+  background-color: #fff;
+}
+.hero .logo-img {
+  width: 250px;
+  margin-top: 25px;
 }
 .hero h1 {
   margin: 0;
   font-size: 38px;
   font-weight: 700;
-  color: #012970;
+  color: #000;
   margin-top: 40px;
 }
 .hero span {
   margin: 0;
   font-size: 20px;
   font-weight: 700;
-  color: #2ec49c;
+  color: #7ea499;
 }
 .hero h2 {
-  color: #444444;
+  color: #000;
   margin: 25px 0 0 0;
   font-size: 20px;
 }
@@ -544,7 +549,7 @@ section {
   transform: translateX(5px);
 }
 .hero .hero-img {
-  text-align: right;
+  text-align: center;
 }
 @media (min-width: 1024px) {
   .hero {
@@ -725,7 +730,7 @@ section {
 .gabung {
   width: 100%;
   height: 100vh;
-  background: url(../img/bg2.jpg) top center no-repeat;
+  /* background: url(../img/bg2.jpg) top center no-repeat; */
   background-size: cover;
 }
 
@@ -733,12 +738,12 @@ section {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color: #fff;
+  color: #316451;
 }
 .gabung span {
   margin: 0;
   font-weight: 700;
-  color: #4154f1;
+  color: #0000;
 }
 .gabung h2 {
   color: #fff;
@@ -752,12 +757,13 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #fff;
+  background: #316451;
   box-shadow: 0px 5px 30px rgba(255, 255, 255, 0.4);
 }
 .gabung .btn-get-started span {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
+  color: #fff;
   font-size: 16px;
   letter-spacing: 1px;
 }
@@ -765,6 +771,7 @@ section {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
+  color: #fff;
 }
 .gabung .btn-get-started:hover i {
   transform: translateX(5px);
@@ -822,21 +829,22 @@ section {
 .terobosan {
   width: 100%;
   height: 100vh;
-  background-color: #f2f5fc;
+  background-color: #fff;
   background-size: cover;
+  padding: 60px 0px;
 }
 .terobosan h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color: #012970;
+  color: #316451;
   margin-top: 40px;
 }
 .terobosan h3 {
   margin: 0;
   font-size: 42px;
   font-weight: 700;
-  color: #012970;
+  color: #000;
   margin-top: 40px;
 }
 .terobosan span {
@@ -928,7 +936,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url(../img/bg3.jpg) top center no-repeat;
+  background-color: #fff;
   background-size: cover;
 }
 
@@ -953,34 +961,38 @@ section {
 }
 .about h3 {
   font-size: 40px;
-  font-weight: 400;
-  color: #fff;
+  font-weight: 800;
+  color: #316451;
   text-transform: uppercase;
+}
+.about mark {
+  background-color: #ffce55;
+  color: #316451;
 }
 .about h2 {
   font-size: 28px;
   font-weight: 400;
-  color: #fff;
+  color: #000;
 }
 
 .about li {
   font-size: 22px;
-  font-weight: 200;
-  color: #fff;
-  margin: 10px 0 0 0;
+  font-weight: 400;
+  color: #000;
+  /* margin: 10px 0 0 0; */
   line-height: 24px;
 }
 
 .about span {
-  color: #e8e8bb;
+  color: #ffde92;
   font-weight: 600;
 }
 
 .about p {
-  margin: 15px 0 30px 0;
+  /* margin: 15px 0 30px 0; */
   line-height: 24px;
   font-size: 22px;
-  color: #fff;
+  color: #000;
 }
 .about .btn-read-more {
   line-height: 0;
@@ -1026,7 +1038,8 @@ section {
 
 /* Download Katalog */
 .katalog {
-  background: #f6f9ff;
+  padding: 20px 0px;
+  background: #fff;
 }
 .katalog .btn-read-more {
   line-height: 0;
@@ -1034,7 +1047,7 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #4154f1;
+  background: #316451;
   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 .katalog .btn-read-more span {
@@ -1224,23 +1237,28 @@ section {
 # keuntungan
 --------------------------------------------------------------*/
 .keuntungan {
-  background: url(../img/call-to-action-bg.jpg) top center no-repeat;
+  background-color: #fff;
   background-size: cover;
 }
 
 .keuntungan .feature-icons {
-  margin-top: 60px;
-  margin-bottom: 50px;
+  /* margin-top: 60px;
+  margin-bottom: 50px; */
 }
 .keuntungan .feature-icons h3 {
-  color: #ffce54;
+  color: #316451;
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 20px;
   text-align: center;
 }
 .keuntungan .feature-icons span {
-  color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+.keuntungan .feature-icons h3 span {
+  color: #316451;
   font-weight: bold;
 }
 
@@ -1251,17 +1269,17 @@ section {
   font-size: 24px;
   font-weight: 700;
   margin: 0 0 10px 0;
-  color: #ffce54;
+  color: #316451;
 }
 .keuntungan .feature-icons .content .icon-box i {
   font-size: 44px;
   line-height: 44px;
-  color: #fff;
+  color: #316451;
   margin-right: 15px;
 }
 .keuntungan .feature-icons .content .icon-box p {
   font-size: 14px;
-  color: #fff;
+  color: #000;
 }
 
 @media (max-width: 768px) {
@@ -1280,24 +1298,28 @@ section {
 # fasilitas
 --------------------------------------------------------------*/
 .fasilitas {
-  background: url(../img/bg-cover.jpg) top center no-repeat;
+  background-color: #fff;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
 }
 
 .fasilitas .feature-icons {
-  margin-top: 60px;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
 }
 .fasilitas .feature-icons h3 {
-  color: #ffce54;
+  color: #316451;
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 20px;
   text-align: center;
 }
+
+.fasilitas .feature-icons h3 span {
+  color: #316451;
+}
+
 .fasilitas .feature-icons span {
-  color: #fff;
+  color: #000;
   font-weight: bold;
 }
 
@@ -1308,17 +1330,17 @@ section {
   font-size: 24px;
   font-weight: 700;
   margin: 0 0 10px 0;
-  color: #ffce54;
+  color: #316451;
 }
 .fasilitas .feature-icons .content .icon-box i {
   font-size: 44px;
   line-height: 44px;
-  color: #fff;
+  color: #316451;
   margin-right: 15px;
 }
 .fasilitas .feature-icons .content .icon-box p {
   font-size: 14px;
-  color: #fff;
+  color: #000;
 }
 
 @media (max-width: 768px) {
@@ -1336,10 +1358,14 @@ section {
 /*--------------------------------------------------------------
 # mk
 --------------------------------------------------------------*/
+.mk section {
+  padding-top: 60px;
+}
+
 .mk .mk-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
-  padding: 60px 15px;
+  padding: 15px 15px;
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
@@ -1352,11 +1378,11 @@ section {
 }
 
 .mk .mk-box {
-  color: #fff;
+  color: #316451;
 }
 
 .mk .mk-box span {
-  color: #012970;
+  color: #2ec49c;
 }
 
 .mk .mk-box .icon {
@@ -1431,7 +1457,8 @@ section {
 .services .service-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
-  padding: 60px 15px;
+  padding: 30px 15px 15px 15px;
+  margin-bottom: 15px;
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
@@ -1444,11 +1471,15 @@ section {
 }
 
 .services .service-box {
-  color: #fff;
+  color: #316451;
+}
+
+.services .service-box b {
+  color: #2ec49c;
 }
 
 .services .service-box span {
-  color: #012970;
+  color: #2ec49c;
 }
 
 .services .service-box .icon {
@@ -1462,7 +1493,7 @@ section {
   text-align: end;
 }
 .services .service-box h3 {
-  color: #fff;
+  color: #316451;
   font-weight: 700;
 }
 
@@ -1539,12 +1570,12 @@ section {
   transition: 0.3s;
 }
 .ringkasan .ringkasan-box h3 {
-  color: #444444;
+  color: #316451;
   font-weight: 700;
 }
 
 .ringkasan .ringkasan-box span {
-  color: #012970;
+  color: #2ec49c;
   font-weight: 700;
 }
 
@@ -1571,9 +1602,9 @@ section {
 .ringkasan .ringkasan-box.blue .read-more {
   color: #2db6fa;
 }
-.ringkasan .ringkasan-box.blue:hover {
+/* .ringkasan .ringkasan-box.blue:hover {
   background: #2db6fa;
-}
+} */
 .ringkasan .ringkasan-box.orange {
   border-bottom: 3px solid #f68c09;
 }
@@ -1584,9 +1615,9 @@ section {
 .ringkasan .ringkasan-box.orange .read-more {
   color: #f68c09;
 }
-.ringkasan .ringkasan-box.orange:hover {
+/* .ringkasan .ringkasan-box.orange:hover {
   background: #f68c09;
-}
+} */
 .ringkasan .ringkasan-box.green {
   border-bottom: 3px solid #08da4e;
 }
@@ -1597,9 +1628,9 @@ section {
 .ringkasan .ringkasan-box.green .read-more {
   color: #08da4e;
 }
-.ringkasan .ringkasan-box.green:hover {
+/* .ringkasan .ringkasan-box.green:hover {
   background: #08da4e;
-}
+} */
 .ringkasan .ringkasan-box.red {
   border-bottom: 3px solid #e9222c;
 }
@@ -1610,9 +1641,9 @@ section {
 .ringkasan .ringkasan-box.red .read-more {
   color: #e9222c;
 }
-.ringkasan .ringkasan-box.red:hover {
+/* .ringkasan .ringkasan-box.red:hover {
   background: #e9222c;
-}
+} */
 .ringkasan .ringkasan-box.purple {
   border-bottom: 3px solid #b50edf;
 }
@@ -1623,9 +1654,9 @@ section {
 .ringkasan .ringkasan-box.purple .read-more {
   color: #b50edf;
 }
-.ringkasan .ringkasan-box.purple:hover {
+/* .ringkasan .ringkasan-box.purple:hover {
   background: #b50edf;
-}
+} */
 .ringkasan .ringkasan-box.pink {
   border-bottom: 3px solid #f51f9c;
 }
@@ -1636,17 +1667,17 @@ section {
 .ringkasan .ringkasan-box.pink .read-more {
   color: #f51f9c;
 }
-.ringkasan .ringkasan-box.pink:hover {
+/* .ringkasan .ringkasan-box.pink:hover {
   background: #f51f9c;
-}
-.ringkasan .ringkasan-box:hover h3,
+} */
+/* .ringkasan .ringkasan-box:hover h3,
 .ringkasan .ringkasan-box:hover p,
 .ringkasan .ringkasan-box:hover .read-more {
   color: #fff;
-}
-.ringkasan .ringkasan-box:hover .icon {
+} */
+/* .ringkasan .ringkasan-box:hover .icon {
   background: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 # Pricing
@@ -1766,7 +1797,8 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio {
-  background: #f9fbff;
+  padding: 0px 0px;
+  background: #fff;
 }
 
 .portfolio #portfolio-flters {
@@ -1793,8 +1825,8 @@ section {
 }
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #4154f1;
-  border-color: #4154f1;
+  color: #316451;
+  border-color: #316451;
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -1941,13 +1973,13 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #4154f1;
+  border: 1px solid #316451;
 }
 .portfolio-details
   .portfolio-details-slider
   .swiper-pagination
   .swiper-pagination-bullet-active {
-  background-color: #4154f1;
+  background-color: #316451;
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
@@ -1985,7 +2017,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  padding: 30px;
+  /* padding: 30px; */
   margin: 40px 30px;
   box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
   background: #fff;
@@ -2040,10 +2072,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #4154f1;
+  border: 1px solid #316451;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #4154f1;
+  background-color: #316451;
 }
 .testimonials .swiper-slide {
   opacity: 0.3;
