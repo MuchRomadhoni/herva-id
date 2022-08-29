@@ -511,7 +511,7 @@ section {
   font-size: 38px;
   font-weight: 700;
   color: #000;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .hero span {
   margin: 0;
@@ -563,11 +563,11 @@ section {
   }
   .hero .hero-img {
     text-align: center;
-    margin-top: 80px;
+    /* margin-top: 80px; */
   }
-  .hero .hero-img img {
+  /* .hero .hero-img img {
     width: 80%;
-  }
+  } */
 }
 @media (max-width: 768px) {
   .hero {
@@ -966,8 +966,11 @@ section {
   text-transform: uppercase;
 }
 .about mark {
-  background-color: #ffce55;
   color: #316451;
+  background-color: #ffce55;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  align-self: center;
 }
 .about h2 {
   font-size: 28px;
@@ -1019,6 +1022,10 @@ section {
 }
 
 @media (max-width: 768px) {
+  .about img {
+    width: 70%;
+  }
+
   .about h3 {
     font-size: 28px;
   }
@@ -1241,10 +1248,6 @@ section {
   background-size: cover;
 }
 
-.keuntungan .feature-icons {
-  /* margin-top: 60px;
-  margin-bottom: 50px; */
-}
 .keuntungan .feature-icons h3 {
   color: #316451;
   font-weight: 700;
