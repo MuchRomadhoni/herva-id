@@ -76,6 +76,36 @@ section {
   }
 }
 
+.keuntungan-header {
+  text-align: center;
+}
+.keuntungan-header h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #2ec49c;
+  text-transform: uppercase;
+}
+.keuntungan-header p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #316451;
+}
+@media (max-width: 768px) {
+  .keuntungan-header p {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+.keuntungan-supp {
+  margin-top: 60px;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -401,6 +431,7 @@ section {
 .youtube {
   width: 100%;
   background-color: #fff;
+  margin-top: 30px;
   /* background: url(../img/3.jpg) top center no-repeat; */
   background-size: cover;
   /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); */
@@ -503,7 +534,7 @@ section {
   background-color: #fff;
 }
 .hero .logo-img {
-  width: 250px;
+  width: 200px;
   margin-top: 25px;
 }
 .hero h1 {
@@ -525,7 +556,7 @@ section {
   font-size: 20px;
 }
 .hero .btn-get-started {
-  margin-top: 30px;
+  margin-top: 15px;
   line-height: 0;
   padding: 15px 40px;
   border-radius: 4px;
@@ -940,6 +971,10 @@ section {
   background-size: cover;
 }
 
+.about img {
+  width: 70%;
+}
+
 .glassmorphism {
   background: rgba(84, 80, 80, 0.25);
   box-shadow: 0 8px 32px 0 rgba(218, 218, 224, 0.37);
@@ -1023,7 +1058,7 @@ section {
 
 @media (max-width: 768px) {
   .about img {
-    width: 70%;
+    width: 50%;
   }
 
   .about h3 {
@@ -1144,13 +1179,14 @@ section {
 }
 .features .feature-box h3 {
   font-size: 18px;
-  color: #fff;
+  color: #316451;
   font-weight: 700;
   margin: 0;
 }
 .features .feature-box i {
   line-height: 0;
-  background: #ecf3ff;
+  background: #2ec49c;
+  color: #fff;
   padding: 4px;
   margin-right: 10px;
   font-size: 24px;
@@ -1158,8 +1194,8 @@ section {
   transition: 0.3s;
 }
 .features .feature-box:hover i {
-  background: #ffce54;
-  color: #fff;
+  background: #fff;
+  color: #2ec49c;
 }
 .features .feture-tabs {
   margin-top: 120px;
