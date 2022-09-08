@@ -17,6 +17,162 @@ body {
   color: #444444;
 }
 
+.ornament .ornament-right {
+  z-index: 0 !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 14%;
+}
+
+.ornament .ornament-left {
+  z-index: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 14%;
+}
+
+.little-yellow-right .ornament .ornament-right {
+  z-index: -1 !important;
+  position: absolute;
+  right: 0;
+  top: -180px;
+  max-width: 14%;
+}
+
+.big-left-yellow .ornament .ornament-left {
+  z-index: 0 !important;
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  max-width: 14%;
+}
+
+.big-right-green .ornament .ornament-right {
+  z-index: -1 !important;
+  position: absolute;
+  right: 0;
+  top: 500px;
+  max-width: 14%;
+}
+
+.big-right-green-second .ornament .ornament-right {
+  z-index: 0 !important;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  max-width: 14%;
+}
+
+.big-left-green .ornament .ornament-left {
+  z-index: -1 !important;
+  position: absolute;
+  left: -30px;
+  top: -150px;
+  max-width: 14%;
+}
+
+.big-left-green-second .ornament .ornament-left {
+  z-index: -1 !important;
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  max-width: 14%;
+}
+
+.big-right-yellow .ornament .ornament-right {
+  z-index: -1 !important;
+  position: absolute;
+  right: 0;
+  top: -350px;
+  max-width: 14%;
+}
+
+.big-left-yellow-second .ornament .ornament-left {
+  z-index: 0 !important;
+  position: absolute;
+  left: -20px;
+  top: -150px;
+  max-width: 14%;
+}
+
+.little-green-right .ornament .ornament-right {
+  z-index: -1 !important;
+  position: absolute;
+  right: 0;
+  top: -60px;
+  max-width: 14%;
+}
+
+@media (max-width: 768px) {
+  .ornament .ornament-right {
+    right: 0;
+    top: 0;
+    max-width: 30%;
+  }
+
+  .ornament .ornament-left {
+    top: 0;
+    left: 0;
+    max-width: 14%;
+  }
+
+  .little-yellow-right .ornament .ornament-right {
+    right: 0;
+    top: -60px;
+    max-width: 20%;
+  }
+
+  .big-left-yellow .ornament .ornament-left {
+    left: 0px;
+    top: 100px;
+    max-width: 14%;
+  }
+
+  .big-right-green .ornament .ornament-right {
+    right: 0;
+    top: 200px;
+    max-width: 18%;
+  }
+
+  .big-right-green-second .ornament .ornament-right {
+    right: 0;
+    top: -90px;
+    max-width: 18%;
+  }
+
+  .big-left-green .ornament .ornament-left {
+    left: 0px;
+    top: -40px;
+    max-width: 18%;
+  }
+
+  .big-left-green-second .ornament .ornament-left {
+    left: 0px;
+    top: -40px;
+    max-width: 18%;
+  }
+
+  .big-right-yellow .ornament .ornament-right {
+    right: 0;
+    top: -180px;
+    max-width: 20%;
+  }
+
+  .big-left-yellow-second .ornament .ornament-left {
+    left: 0px;
+    top: 0px;
+    max-width: 18%;
+  }
+
+  .little-green-right .ornament .ornament-right {
+    right: 0;
+    top: -80px;
+    max-width: 18%;
+  }
+}
+
 a {
   color: #4154f1;
   text-decoration: none;
@@ -430,11 +586,8 @@ section {
 /* youtube */
 .youtube {
   width: 100%;
-  background-color: #fff;
   margin-top: 30px;
-  /* background: url(../img/3.jpg) top center no-repeat; */
   background-size: cover;
-  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); */
 }
 
 .youtube h1 {
@@ -472,7 +625,7 @@ section {
     line-height: 24px;
   }
   .youtube iframe {
-    padding: 10px;
+    padding: 30px;
   }
 }
 
@@ -511,15 +664,9 @@ section {
   }
 }
 
-.minus-margin {
-  margin-top: -70px;
-}
-
 .syarat {
+  height: 100%;
   padding-top: 0px;
-  background: url(../img/call-to-action-bg.jpg) top center no-repeat;
-  background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
 }
 
 /*--------------------------------------------------------------
@@ -531,7 +678,7 @@ section {
   /* background: url(../img/hero-bg.png) top center no-repeat; */
   background-size: cover;
   padding: 60px 0 0px 0;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .hero .logo-img {
   width: 200px;
@@ -562,7 +709,7 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #4154f1;
+  background: #316451;
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 .hero .btn-get-started span {
@@ -761,7 +908,6 @@ section {
 .gabung {
   width: 100%;
   height: 100vh;
-  /* background: url(../img/bg2.jpg) top center no-repeat; */
   background-size: cover;
 }
 
@@ -967,7 +1113,6 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background-color: #fff;
   background-size: cover;
 }
 
@@ -1081,7 +1226,7 @@ section {
 /* Download Katalog */
 .katalog {
   padding: 20px 0px;
-  background: #fff;
+  /* background: #fff; */
 }
 .katalog .btn-read-more {
   line-height: 0;
@@ -1197,22 +1342,37 @@ section {
   background: #fff;
   color: #2ec49c;
 }
-.features .feture-tabs {
-  margin-top: 120px;
-}
+
 .features .feture-tabs h3 {
-  color: #fff;
+  color: #316451;
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 10px;
 }
 @media (max-width: 768px) {
   .features .feture-tabs h3 {
-    font-size: 28px;
+    font-size: 24px;
+    text-align: center;
   }
 }
+
+@media screen and (min-width: 992px) {
+  .mobile-hide {
+    display: none !important;
+  }
+  .mobile-show {
+    display: block !important;
+  }
+}
+.mobile-hide {
+  display: block;
+}
+.mobile-show {
+  display: none;
+}
+
 .features .feture-tabs .nav-pills {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #2ec49c;
 }
 .features .feture-tabs .nav-link {
   background: none;
@@ -1233,13 +1393,13 @@ section {
   font-size: 18px;
   margin: 0;
   font-weight: 700;
-  color: #fff;
+  color: #316451;
 }
 .features .feture-tabs .tab-content i {
   font-size: 24px;
   line-height: 0;
   margin-right: 8px;
-  color: #fff;
+  color: #316451;
 }
 .features .feature-icons {
   margin-top: 120px;
@@ -1401,8 +1561,14 @@ section {
   padding-top: 60px;
 }
 
+.mk h2 {
+  color: #316451;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+
 .mk .mk-box {
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
   padding: 15px 15px;
   text-align: center;
@@ -1491,9 +1657,109 @@ section {
 } */
 
 /*--------------------------------------------------------------
+# mengapa kami (supplier)
+--------------------------------------------------------------*/
+.mk section {
+  padding-top: 60px;
+}
+
+.mk h2 {
+  color: #316451;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+
+.mk .mengapa-kami {
+  height: 100%;
+  padding: 15px 15px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.mk .mengapa-kami p {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+
+.mk .mengapa-kami img {
+  width: 25%;
+}
+
+.mk .mengapa-kami {
+  color: #316451;
+}
+
+.mk .mengapa-kami span {
+  color: #2ec49c;
+}
+
+.mk .mengapa-kami .icon {
+  font-size: 46px;
+  padding: 15px 10px;
+  border-radius: 4px;
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  transition: 0.3s;
+  text-align: end;
+}
+.mk .mengapa-kami h3 {
+  color: #000;
+  font-weight: 700;
+}
+
+.mk .mengapa-kami sup {
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .mk .mengapa-kami h3 {
+    font-size: 18px;
+  }
+
+  .mk .mengapa-kami p {
+    font-size: 20px;
+  }
+
+  .mk .mengapa-kami img {
+    margin-top: 30px;
+    width: 60%;
+  }
+}
+
+.mk .mengapa-kami .read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 20px;
+  color: #fff;
+}
+.mk .mengapa-kami .read-more i {
+  line-height: 0;
+  margin-left: 5px;
+  font-size: 18px;
+}
+.mk .mengapa-kami.green {
+  border-bottom: 3px solid #2ec49c;
+  background: #2ec49c;
+}
+.mk .mengapa-kami.green .icon {
+  color: #fff;
+  /* background: #fff; */
+}
+.mk .mengapa-kami.green .read-more {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .service-box {
+  background-color: #fff;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
   padding: 30px 15px 15px 15px;
@@ -1837,7 +2103,6 @@ section {
 --------------------------------------------------------------*/
 .portfolio {
   padding: 0px 0px;
-  background: #fff;
 }
 
 .portfolio #portfolio-flters {
@@ -2059,7 +2324,7 @@ section {
   /* padding: 30px; */
   margin: 40px 30px;
   box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
-  background: #fff;
+  /* background: #fff; */
   min-height: 320px;
   display: flex;
   flex-direction: column;
