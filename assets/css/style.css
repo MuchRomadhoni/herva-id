@@ -17,6 +17,19 @@ body {
   color: #444444;
 }
 
+.bg-image-vertical {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+}
+
+@media (min-width: 1025px) {
+  .h-custom-2 {
+    height: 100%;
+  }
+}
 .ornament .ornament-right {
   z-index: 0 !important;
   position: absolute;
@@ -42,7 +55,7 @@ body {
 }
 
 .big-left-yellow .ornament .ornament-left {
-  z-index: 0 !important;
+  z-index: -1 !important;
   position: absolute;
   left: 0px;
   top: 100px;
@@ -257,10 +270,10 @@ section {
     line-height: 32px;
   }
 }
-
+/* 
 .keuntungan-supp {
   margin-top: 60px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -1316,7 +1329,18 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+.margin-kiri {
+  padding-left: 70px;
+}
+
+@media (max-width: 768px) {
+  .margin-kiri {
+    padding-left: 20px;
+  }
+}
+
 .features .feature-box {
+  background-color: #fff;
   padding: 24px 20px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
@@ -2488,11 +2512,8 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients .clients-slider .swiper-slide img {
-  opacity: 0.5;
-  transition: 0.3s;
-}
-.clients .clients-slider .swiper-slide img:hover {
   opacity: 1;
+  transition: 0.3s;
 }
 .clients .clients-slider .swiper-pagination {
   margin-top: 20px;
